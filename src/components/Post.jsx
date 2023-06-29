@@ -3,7 +3,7 @@ import styles from './Post.module.css'
 export function Post() {
     return (
 
-        <article className={styles.Post}>
+        <article className={styles.post}>
             <header>
                 <div className={styles.author}>
                     <img className={styles.avatar} src="https://github.com/AlissonKelvin.png" />
@@ -29,11 +29,24 @@ export function Post() {
                 <p>
                     <a href="">#novoprojeto</a>{' '}
                     <a>#nlw</a>{' '}
-                    <a>#rocketseat</a>{' '}
+                    <a>#rocketseat</a>
                 </p>
 
             </div>
 
+            <form className={styles.commentForm}>
+
+                <strong>Deixe seu feedback</strong>
+
+                <textarea
+                    placeholder='Deixe um comentario'
+                />
+
+                <footer>
+                    <button type="submit">Publicar</button>
+                </footer>
+
+            </form>
         </article>
 
     )
