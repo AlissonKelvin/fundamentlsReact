@@ -1,3 +1,5 @@
+import { Comment } from './Comment'
+
 import styles from './Post.module.css'
 
 export function Post() {
@@ -47,6 +49,9 @@ export function Post() {
                 </footer>
 
             </form>
+            <div className={styles.commentList}>
+                <Comment />
+            </div>
         </article>
 
     )
