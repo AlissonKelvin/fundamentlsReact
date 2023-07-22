@@ -2,7 +2,8 @@ import { ThumbsUp, Trash } from 'phosphor-react'
 import styles from './Comment.module.css'
 import { Avatar } from './Avatar'
 
-export function Comment() {
+// eslint-disable-next-line react/prop-types
+export function Comment({ content }) {
     return (
         <div className={styles.comment}>
             <Avatar hasBorder={false} src="https://github.com/AlissonKelvin.png" />
@@ -17,7 +18,7 @@ export function Comment() {
                             <Trash size={24} />
                         </button>
                     </header>
-                    <p></p>
+                    <p>{content}</p>
 
                 </div>
                 <footer>

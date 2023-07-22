@@ -64,7 +64,7 @@ function App() {
                 key={post.id}
                 author={post.author}
                 content={post.content}
-                poblishedAt={post.publishedAt}
+                publishedAt={post.publishedAt}
               />
             )
 
